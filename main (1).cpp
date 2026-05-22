@@ -7,7 +7,7 @@ int main() {
 
     // base class pointer holding a derived object
     // this is polymorphism - Animal pointer but Cat behavior
-    Animal* a = new Cat("Luna");
+    Animal* a = new Cat("Bella");
     a->speak();   // calls Cat's speak not Animal's
     delete a;     // virtual destructor makes sure Cat cleans up
 
@@ -15,11 +15,11 @@ int main() {
 
     // vector of Animal pointers - can hold any derived type
     vector<Animal*> shelter;
-    shelter.push_back(new Cat("Mochi"));
-    shelter.push_back(new Dog("Rex"));
-    shelter.push_back(new Cat("Bella"));
-    shelter.push_back(new Bird("Tweety"));
-    shelter.push_back(new Dog("Buddy"));
+    shelter.push_back(new Cat("Sierra"));
+    shelter.push_back(new Dog("Kody"));
+    shelter.push_back(new Cat("Nala"));
+    shelter.push_back(new Bird("Peep"));
+    shelter.push_back(new Dog("Duke"));
 
     // loop through and call speak on each one
     // even though they are all Animal* the right speak() runs
